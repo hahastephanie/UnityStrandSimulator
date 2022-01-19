@@ -31,8 +31,8 @@ namespace PhysicsLab
 				var particle = new Particle();
                 particle.invMass = i == 0 ? 0 : 1; // 0 means Mass is infinite 质量
                 particle.radius = 0.5f * Space;  //半径
-				particle.pos = particle.prevPos = new Vector3(0, -i * Space, 0);
-				particle.velocity = Vector3.zero;
+				particle.pos = particle.prevPos = new Vector3(0, -i * Space, 0); //位置
+				particle.velocity = Vector3.zero;  //速度
 				particleList.Add(particle);
 			}
 		}
